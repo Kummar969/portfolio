@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Modern</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #020617);
+  color: white;
+}
+
+/* NAVBAR */
+nav {
+  position: fixed;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  backdrop-filter: blur(15px);
+  background: rgba(255,255,255,0.05);
+  padding: 10px 20px;
+  border-radius: 50px;
+  display: flex;
+  gap: 15px;
+  z-index: 1000;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* HERO */
+header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 3px solid #38bdf8;
+}
+
+header h1 {
+  font-size: 40px;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header p {
+  margin-top: 10px;
+  color: #cbd5f5;
+}
+
+/* SECTION */
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* CARD */
+.card {
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(20px);
+  padding: 20px;
+  border-radius: 15px;
+  margin: 10px 0;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+/* PROJECT */
+.project {
+  margin-bottom: 20px;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #38bdf8;
+}
+
+/* SKILL */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills span {
+  margin: 5px;
+  padding: 8px 14px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #38bdf8, #6366f1);
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <a href="#">Home</a>
+  <a href="#about">About</a>
+  <a href="#project">Project</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header>
+  <!-- FOTO PROFIL -->
+  <img src="Hutao.png" class="profile">
+
+  <h1>Halo, Saya [Nama Kamu]</h1>
+  <p>Web Developer • UI Designer</p>
+</header>
+
+<section id="about">
+  <h2>Tentang Saya</h2>
+  <div class="card">
+    <p>
+      Saya adalah siswa RPL yang fokus menjadi Web Developer.
+      Saya memiliki minat dalam membuat website modern, interaktif, dan responsive.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Skill</h2>
+  <div class="skills">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>PHP</span>
+    <span>MySQL</span>
+  </div>
+</section>
+
+<section id="project">
+  <h2>Project</h2>
+
+  <div class="card project">
+    <h3>Website Perpustakaan</h3>
+    <p><b>Fitur:</b> Login siswa, peminjaman buku, riwayat pinjam</p>
+    <p><b>Teknologi:</b> HTML, CSS, PHP, MySQL</p>
+    <a href="https://github.com/Kummar969/perpustakaan_digital" target="_blank">Lihat GitHub</a>
+  </div>
+
+  <div class="card project">
+    <h3>To-Do List App</h3>
+    <p><b>Fitur:</b> Tambah, hapus, dan tandai tugas selesai</p>
+    <p><b>Teknologi:</b> HTML, CSS, JavaScript</p>
+    <a href="https://github.com/username/todolist" target="_blank">Lihat GitHub</a>
+  </div>
+
+</section>
+
+<section id="contact">
+  <h2>Kontak</h2>
+  <div class="card">
+    <p>Email: kamu@email.com</p>
+    <p>WhatsApp: 08xxxx</p>
+    <p>GitHub: github.com/username</p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Portfolio Kamu
+</footer>
+
+</body>
+</html>
